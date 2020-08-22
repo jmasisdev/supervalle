@@ -17,7 +17,7 @@
         </div><!-- end row -->
       </div><!-- end follow us -->
       <div class="text-center mt-4">
-        <img src="img/super-valle-logo.png" alt="Super Valle">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/super-valle-logo.png" alt="Super Valle">
         <p class="mt-2">Super Valle © 2020. All Rights Reserved.</p>
       </div>
     </div><!-- end container -->

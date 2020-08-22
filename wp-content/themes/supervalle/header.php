@@ -12,7 +12,7 @@
 
   <header>
     <div class="logo float-left position-relative d-none d-lg-block">
-      <img class="position-absolute" src="img/super-valle-logo.png" alt="Super Valle">
+      <img class="position-absolute" src="<?php echo get_stylesheet_directory_uri(); ?>/img/super-valle-logo.png" alt="Super Valle">
     </div>
     <nav class="navbar navbar-expand-lg navbar-light col-lg-7 col-xl-7">
       <a class="navbar-brand d-block d-lg-none" href="#"><img class="img-fluid" src="img/super-valle-logo.png" alt="Super Valle"></a>
