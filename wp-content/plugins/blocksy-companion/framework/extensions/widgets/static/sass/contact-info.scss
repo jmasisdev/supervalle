@@ -1,0 +1,112 @@
+[class*="ct-contact-info"] {
+
+	ul {
+		--contentSpacing: 0;
+	}
+
+	li {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-column-gap: 15px;
+		align-items: center;
+
+		&:hover i {
+			color: var(--icon-hover-color);
+		}
+	}
+
+	i {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--icon-color);
+		transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+					background 0.12s cubic-bezier(.455,.03,.515,.955),
+					border-color 0.12s cubic-bezier(.455,.03,.515,.955);
+
+
+		svg {
+			fill: currentColor;
+			width: var(--icon-size);
+			height: var(--icon-size);
+		}
+	}
+
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		color: var(--color);
+	}
+
+	.contact-title {
+		font-weight: 600;
+	}
+
+	.ct-contact-info-text {
+		margin-bottom: 20px;
+	}
+}
+
+
+// icon types & size
+[class*="ct-contact-info"] {
+
+	[data-type="square"] i {
+		border-radius: 2px;
+	}
+
+	[data-type="rounded"] i {
+		border-radius: 100%;
+	}
+
+	[data-type="square"],
+	[data-type="rounded"] {
+		i {
+			width: calc(var(--icon-size) * 2.5);
+			height: calc(var(--icon-size) * 2.5);
+		}
+	}
+}
+
+
+// colors
+[class*="ct-contact-info"] {
+
+	[data-fill="solid"] {
+		i {
+			background: var(--backgroundColor);
+		}
+
+		
+		li:hover i {
+			background: var(--backgroundColorHover);
+		}
+	}
+
+	[data-fill="outline"] {
+		i {
+			border: 1px solid var(--backgroundColor);
+		}
+
+		li:hover i {
+			border-color: var(--backgroundColorHover);
+		}
+	}
+}
+
+
+
+
+// widget
+.ct-contact-info-widget {
+	--listItemSpacing: 20px;
+	--icon-size: 20px;
+	--icon-hover-color: var(--linkHoverColor);
+	--backgroundColor: rgba(0, 0, 0, 0.1);
+	--backgroundColorHover: var(--linkHoverColor);
+
+	.contact-info {
+		font-size: 15px;
+		line-height: 1.4;
+	}
+}
