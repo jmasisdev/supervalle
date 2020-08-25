@@ -338,12 +338,12 @@ if (
 		'css' => $css,
 		'variables' => [
 			'default' => [
-				'selector' => blocksy_prefix_selector('.ct-related-entry-title', $prefix),
+				'selector' => blocksy_prefix_selector('.related-entry-title', $prefix),
 				'variable' => 'linkInitialColor'
 			],
 
 			'hover' => [
-				'selector' => blocksy_prefix_selector('.ct-related-entry-title', $prefix),
+				'selector' => blocksy_prefix_selector('.related-entry-title', $prefix),
 				'variable' => 'linkHoverColor'
 			],
 		],

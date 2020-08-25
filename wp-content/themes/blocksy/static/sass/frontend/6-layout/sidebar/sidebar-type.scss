@@ -24,7 +24,7 @@
 	&[data-sticky] {
 		@include media-breakpoint-up (lg) {
 			position: sticky;
-			top: var(--sidebarOffset);
+			top: calc(var(--sidebarOffset) + var(--adminBar, 0px) + var(--headerStickyHeight, 0px));
 		}
 	}
 }

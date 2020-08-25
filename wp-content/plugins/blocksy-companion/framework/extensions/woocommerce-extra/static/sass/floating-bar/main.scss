@@ -1,7 +1,7 @@
 .ct-floating-bar {
 	position: fixed;
-	z-index: 20;
-	top: 0;
+	z-index: 5;
+	top: calc(var(--adminBar, 0px) + var(--passepartoutSize, 0px) + var(--headerStickyHeight, 0px));
 	left: 0;
 	right: 0;
 	display: var(--visibility, flex);

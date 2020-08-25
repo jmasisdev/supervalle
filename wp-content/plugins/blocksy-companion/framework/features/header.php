@@ -356,6 +356,23 @@ class HeaderAdditions
             $conditions[$index]['conditions'] = $particular_conditions;
         }
         $this->set_conditions( $conditions );
+        $section_value = blocksy_manager()->header_builder->get_section_value();
+        foreach ( $section_value['sections'] as $index => $current_section ) {
+            if ( !isset( $current_section['settings'] ) ) {
+                continue;
+            }
+            if ( !isset( $current_section['settings']['transparent_conditions'] ) ) {
+                continue;
+            }
+            foreach ( $current_section['settings']['transparent_conditions'] as $cond_index => $single_condition ) {
+                $particular_conditions = $single_condition;
+                if ( ($single_condition['rule'] === 'page_ids' || $single_condition['rule'] === 'post_ids') && (isset( $single_condition['payload'] ) && isset( $single_condition['payload']['post_id'] ) && intval( $single_condition['payload']['post_id'] ) === $old_post_id) ) {
+                    $single_condition['payload']['post_id'] = $post_id;
+                }
+                $section_value['sections'][$index]['settings']['transparent_conditions'][$cond_index] = $single_condition;
+            }
+        }
+        set_theme_mod( 'header_placements', $section_value );
     }
     
     public function get_conditions()

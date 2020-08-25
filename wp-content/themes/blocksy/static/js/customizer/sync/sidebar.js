@@ -42,11 +42,12 @@ watchOptionsWithPrefix({
 			document.querySelector('.ct-sidebar').dataset.widgets = 'separated'
 		}
 
+		sidebar.removeAttribute('data-sticky')
+
 		if (getOptionFor('has_sticky_sidebar') === 'yes') {
 			sidebar.dataset.sticky = ''
 		}
 
-		sidebar.removeAttribute('data-sticky')
 		;[...document.querySelectorAll('.widget-title')].map(el =>
 			changeTagName(el, wp.customize('widgets_title_wrapper')())
 		)

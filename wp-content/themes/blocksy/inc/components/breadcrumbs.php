@@ -343,7 +343,7 @@ class Blocksy_Breadcrumbs_Builder {
 			}
 		}
 
-		return $return;
+		return apply_filters('blocksy:breadcrumbs:items-array', $return);
 	}
 
 	/**

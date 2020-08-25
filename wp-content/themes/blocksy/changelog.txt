@@ -1,3 +1,19 @@
+1.7.28: 2020-08-24
+- Fix: Syntax error
+
+1.7.27: 2020-08-24
+- New: `blocksy:breadcrumbs:items-array` filter for breadcrumbs
+- New: Add Edit Post link at the end of the post
+- New: Option to disable comments website field
+- Improvement: Google fonts are not displayed inside editor
+- Improvement: Row min height
+- Fix: Sticky header + viewport frame
+- Fix: Elementor single variable product select field
+- Fix: Sticky sidebar offset when sticky header is enabled
+- Fix: Related posts title color
+- Fix: Row background color on mobile
+- Fix: Logo position top alignment issue
+
 1.7.26: 2020-08-20
 - Fix: Sticky header logo
 - Fix: Logic for dynamic CSS on small devices

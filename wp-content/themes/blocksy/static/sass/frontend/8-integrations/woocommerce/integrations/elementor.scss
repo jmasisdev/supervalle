@@ -24,17 +24,8 @@
 			}
 
 			td.value {
-				.selectr-container {
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: var(--variation-select-width) !important;
-				}
-
-				&:before,
 				select {
-					opacity: 0;
-					height: var(--formInputHeight) !important;
+					appearance: auto;
 				}
 			}
 

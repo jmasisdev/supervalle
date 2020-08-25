@@ -23,6 +23,10 @@ This plugin runs and adds its enhacements only if the Blocksy theme is installed
 2. Activate the plugin by going to **Plugins** page in WordPress admin and clicking on **Activate** link.
 
 == Changelog ==
+1.7.22: 2020-08-24
+- Improvement: Auto-regenerate Dynamic CSS after update
+- Improvement: Sticky header + floating cart
+
 1.7.21: 2020-08-20
 - Fix: More fixes for transparent header
 

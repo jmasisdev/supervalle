@@ -418,7 +418,7 @@ $options = [
 							'spread' => 0,
 							'inset' => false,
 							'color' => [
-								'color' => 'rgba(44,62,80,0.15)',
+								'color' => 'rgba(44,62,80,0.05)',
 							],
 						])
 					],
@@ -436,7 +436,7 @@ $options = [
 							'spread' => 0,
 							'inset' => false,
 							'color' => [
-								'color' => 'rgba(44,62,80,0.15)',
+								'color' => 'rgba(44,62,80,0.05)',
 							],
 						])
 					],
@@ -454,7 +454,7 @@ $options = [
 							'spread' => 0,
 							'inset' => false,
 							'color' => [
-								'color' => 'rgba(44,62,80,0.15)',
+								'color' => 'rgba(44,62,80,0.05)',
 							],
 						])
 					],

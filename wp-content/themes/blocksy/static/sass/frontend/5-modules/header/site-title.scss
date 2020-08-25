@@ -1,6 +1,9 @@
 .site-branding {
 	display: flex;
-	align-items: center;
+
+	&:not([data-logo="top"]) {
+		align-items: center;
+	}
 }
 
 .site-title-container {
@@ -65,7 +68,10 @@
 // logo position
 [data-logo="top"] {
 	flex-direction: column;
-	--text-align: center;
+
+	.site-description {
+		margin-top: 0.3em;
+	}
 }
 
 [data-logo="left"] {
@@ -86,6 +92,7 @@
 
 // alignment
 [data-column="middle"] .site-branding {
+	align-items: center;
 	--text-align: center;
 }
 

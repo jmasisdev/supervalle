@@ -76,7 +76,7 @@ if (! function_exists('blocksy_get_dynamic_css_file_content')) {
 		$content .= trim($css->build_css_structure());
 
 		// $content .= "\n\n/* Tablet CSS */\n";
-		$content .= "@media (max-width: 999.98px) and (min-width: 690px) {";
+		$content .= "@media (max-width: 999.98px) {";
 		$content .= "  " . trim($tablet_css->build_css_structure());
 		$content .= "}";
 
@@ -187,7 +187,7 @@ add_action(
 			 * Note to code reviewers: This line doesn't need to be escaped.
 			 * The variable used here has the value escaped properly.
 			 */
-			echo '<style id="ct-main-styles-tablet-inline-css" type="text/css" media="(max-width: 999.98px) and (min-width: 690px)">';
+			echo '<style id="ct-main-styles-tablet-inline-css" type="text/css" media="(max-width: 999.98px)">';
 			echo $tablet_css;
 			echo "</style>\n";
 		}

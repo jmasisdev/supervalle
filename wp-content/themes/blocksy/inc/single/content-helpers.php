@@ -200,15 +200,27 @@ function blocksy_single_content() {
 				<?php
 			}
 
+			?>
+		</div>
+
+		<?php
+			if (get_post_type() === 'post') {
+				edit_post_link(
+					sprintf(
+						/* translators: %s: Post title. */
+						__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'blocksy' ),
+						get_the_title()
+					)
+				);
+			}
+
 			wp_link_pages(
 				[
 					'before' => '<div class="page-links"><span class="post-pages-label">' . esc_html__( 'Pages', 'blocksy' ) . '</span>',
 					'after'  => '</div>',
 				]
 			);
-
-			?>
-		</div>
+		?>
 
 		<?php if (
 			$has_post_tags

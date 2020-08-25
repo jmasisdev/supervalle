@@ -31,7 +31,7 @@ class Blocksy_Header_Builder_Render {
 		return count(explode('~', $id)) > 1;
 	}
 
-	public function get_header_height() {
+	public function get_header_height($sticky_height = false) {
 		$top_row = $this->get_item_data_for('top-row');
 		$middle_row = $this->get_item_data_for('middle-row');
 		$bottom_row = $this->get_item_data_for('bottom-row');
@@ -41,6 +41,74 @@ class Blocksy_Header_Builder_Render {
 			'tablet' => 50,
 			'desktop' => 50,
 		]);
+
+		$middle_row_height = blocksy_akg('headerRowHeight', $middle_row, [
+			'mobile' => 70,
+			'tablet' => 70,
+			'desktop' => 120,
+		]);
+
+		$bottom_row_height = blocksy_akg('headerRowHeight', $bottom_row, [
+			'mobile' => 80,
+			'tablet' => 80,
+			'desktop' => 80,
+		]);
+
+		if ($sticky_height) {
+			if (
+				$sticky_height['behaviour'] === 'middle'
+				||
+				$sticky_height['behaviour'] === 'middle_bottom'
+				||
+				$sticky_height['behaviour'] === 'bottom'
+			) {
+				$top_row_height = [
+					'mobile' => 0,
+					'tablet' => 0,
+					'desktop' => 0,
+				];
+			}
+
+			if (
+				$sticky_height['behaviour'] === 'top'
+				||
+				$sticky_height['behaviour'] === 'bottom'
+			) {
+				$middle_row_height = [
+					'mobile' => 0,
+					'tablet' => 0,
+					'desktop' => 0,
+				];
+			} else {
+				if (blocksy_akg('has_sticky_shrink', $middle_row, 'no') === 'yes') {
+					$middle_row_shrink = blocksy_expand_responsive_value(blocksy_akg(
+						'stickyHeaderRowShrink',
+						$middle_row,
+						70
+					));
+
+					$middle_row_height = [
+						'mobile' => intval($middle_row_shrink['mobile']) * intval($middle_row_height['mobile']) / 100,
+						'tablet' => intval($middle_row_shrink['tablet']) * intval($middle_row_height['tablet']) / 100,
+						'desktop' => intval($middle_row_shrink['desktop']) * intval($middle_row_height['desktop']) / 100,
+					];
+				}
+			}
+
+			if (
+				$sticky_height['behaviour'] === 'middle'
+				||
+				$sticky_height['behaviour'] === 'top_middle'
+				||
+				$sticky_height['behaviour'] === 'top'
+			) {
+				$bottom_row_height = [
+					'mobile' => 0,
+					'tablet' => 0,
+					'desktop' => 0,
+				];
+			}
+		}
 
 		$is_row_empty_mobile = $this->is_row_empty('top-row', 'mobile');
 		$is_row_empty_desktop = $this->is_row_empty('top-row', 'desktop');
@@ -54,12 +122,6 @@ class Blocksy_Header_Builder_Render {
 			$top_row_height['desktop'] = 0;
 		}
 
-		$middle_row_height = blocksy_akg('headerRowHeight', $middle_row, [
-			'mobile' => 70,
-			'tablet' => 70,
-			'desktop' => 120,
-		]);
-
 		$is_row_empty_mobile = $this->is_row_empty('middle-row', 'mobile');
 		$is_row_empty_desktop = $this->is_row_empty('middle-row', 'desktop');
 
@@ -72,11 +134,6 @@ class Blocksy_Header_Builder_Render {
 			$middle_row_height['desktop'] = 0;
 		}
 
-		$bottom_row_height = blocksy_akg('headerRowHeight', $bottom_row, [
-			'mobile' => 80,
-			'tablet' => 80,
-			'desktop' => 80,
-		]);
 
 		$is_row_empty_mobile = $this->is_row_empty('bottom-row', 'mobile');
 		$is_row_empty_desktop = $this->is_row_empty('bottom-row', 'desktop');

@@ -38,6 +38,7 @@ class Blocksy_Db_Versioning {
 		}
 
 		if (version_compare($saved_version, $current_version, '<')) {
+			do_action('blocksy:dynamic-css:regenere_css_files');
 			update_option('blocksy_db_version', $current_version);
 		}
 	}

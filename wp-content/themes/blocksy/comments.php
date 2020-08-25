@@ -21,6 +21,20 @@ $commenter = wp_get_current_commenter();
 $req = get_option( 'require_name_email' );
 $aria_req = ( $req ? " aria-required='true'" : '' );
 
+$url_field_output = '';
+$data_columns_output = 'data-columns="2"';
+
+$prefix = blocksy_manager()->screen->get_prefix();
+
+if (get_theme_mod($prefix . '_has_comments_website', 'yes') === 'yes') {
+	$url_field_output = '<div class="comment-form-url">
+		<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" />
+		<label for="url">' . __( 'Website', 'blocksy' ) . '</label>
+	</div>';
+
+	$data_columns_output = '';
+}
+
 $form_options = [
 	'format' => 'xhtml',
 	'class_form'        => 'comment-form',
@@ -45,7 +59,7 @@ $form_options = [
 	'fields' => [
 		// Author input
 		'author' =>
-		'<div class="ct-respond-form-inputs">
+		'<div class="ct-respond-form-inputs" ' . $data_columns_output . '>
 		<div class="comment-form-author">
 		<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />
 		<label for="author">' . __( 'Name', 'blocksy' ) . ' <b class="required">*</b></label>
@@ -58,11 +72,7 @@ $form_options = [
 			<label for="email">' . __( 'Email', 'blocksy' ) . ' <b class="required">*</b></label>
 			</div>',
 
-		'url' =>
-			'<div class="comment-form-url">
-			<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" />
-			<label for="url">' . __( 'Website', 'blocksy' ) . '</label>
-			</div></div>',
+		'url' => $url_field_output . '</div>',
 
 		'cookies' => ''
 	],

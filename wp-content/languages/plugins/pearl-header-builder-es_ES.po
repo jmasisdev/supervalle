@@ -1,0 +1,936 @@
+# Translation of Plugins - WordPress Header Builder Plugin – Pearl - Development (trunk) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - WordPress Header Builder Plugin – Pearl - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-02-22 11:18:21+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - WordPress Header Builder Plugin – Pearl - Development (trunk)\n"
+
+#. Plugin Name of the plugin
+msgid "WordPress Header Builder Plugin – Pearl"
+msgstr "WordPress Header Builder Plugin – Pearl"
+
+#: includes/presets.php:616
+msgid "Bottom bar Z-Index"
+msgstr "Z-Index de la barra inferior"
+
+#: includes/presets.php:521
+msgid "Header Z-Index"
+msgstr "Z-Index de la cabecera"
+
+#: includes/presets.php:426
+msgid "Top bar Z-Index"
+msgstr "Z-Index de la barra superior"
+
+#: includes/presets.php:382 includes/presets.php:477 includes/presets.php:572
+msgid "Set bottom margin"
+msgstr "Establece el margen inferior"
+
+#: includes/presets.php:381 includes/presets.php:476 includes/presets.php:571
+msgid "Margin bottom (px)"
+msgstr "Margen inferior (px)"
+
+#: includes/presets.php:371 includes/presets.php:466 includes/presets.php:561
+msgid "Set top margin"
+msgstr "Establece el margen superior"
+
+#: includes/presets.php:370 includes/presets.php:465 includes/presets.php:560
+msgid "Margin top (px)"
+msgstr "Margen superior (px)"
+
+#: includes/presets.php:341 includes/presets.php:436 includes/presets.php:531
+msgid "Max width (px)"
+msgstr "Ancho máximo (px)"
+
+#: includes/presets.php:142
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: includes/presets.php:137
+msgid "Custom HTML"
+msgstr "HTML personalizado"
+
+#: includes/presets.php:245
+msgid "Select sticky header"
+msgstr "Selecciona la cabecera fija"
+
+#. Author URI of the plugin
+msgid "http://stylemixthemes.com"
+msgstr "https://stylemixthemes.com/"
+
+#. Author of the plugin
+msgid "StylemixThemes"
+msgstr "StylemixThemes"
+
+#. Description of the plugin
+msgid "Pearl Header Builder gives you complete freedom to compose a header that perfectly suits your site."
+msgstr "Pearl Header Builder te da total libertad para componer una cabecera que se adapte perfectamente a tu sitio."
+
+#. Plugin URI of the plugin
+msgid "http://hb.stylemixthemes.com"
+msgstr "http://hb.stylemixthemes.com"
+
+#: includes/views/hb_variants.php:56
+msgid "OR"
+msgstr "O"
+
+#: includes/views/hb_variants.php:47
+msgid "Insert shortcode or action to display your builded header in <a href=\"%s\" target=\"_blank\">header template</a>"
+msgstr "Inserta el shortcode o la acción para mostrar tu cabecera maquetada en la <a href=\"%s\" target=\"_blank\">plantilla de cabecera</a>"
+
+#: includes/views/hb_variants.php:40
+msgid "Add new header"
+msgstr "Añadir nueva cabecera"
+
+#: includes/views/hb_variants.php:37
+msgid "Enter header name"
+msgstr "Introduce el nombre de la cabecera"
+
+#: includes/views/hb_variants.php:29
+msgid "or <a href=\"%s\">create a new header</a>."
+msgstr "o <a href=\"%s\">crea una nueva cabecera</a>."
+
+#: includes/views/hb_variants.php:27
+msgid "Select"
+msgstr "Seleccionar"
+
+#: includes/views/hb_variants.php:17
+msgid "Select a header to edit:"
+msgstr "Selecciona una cabecera para editarla:"
+
+#: includes/screen.php:9 includes/screen.php:10
+msgid "Header Builder"
+msgstr "Maquetador de cabecera"
+
+#: includes/presets.php:1359
+msgid "Normal (400)"
+msgstr "Normal (400)"
+
+#: includes/presets.php:1358
+msgid "Medium (500)"
+msgstr "Medio (500)"
+
+#: includes/presets.php:1357
+msgid "Semi-Bold (600)"
+msgstr "Semi-negrita (600)"
+
+#: includes/presets.php:1356
+msgid "Bold (700)"
+msgstr "Negrita (700)"
+
+#: includes/presets.php:1355
+msgid "Bolder (800)"
+msgstr "Más negrita (800)"
+
+#: includes/presets.php:1353
+msgid "Select font-weight"
+msgstr "Selecciona el grosor de la fuente"
+
+#: includes/presets.php:628
+msgid "Choose header to import"
+msgstr "Elige una cabecera para importar"
+
+#: includes/presets.php:623
+msgid "Import Header"
+msgstr "Importar cabecera"
+
+#: includes/presets.php:605
+msgid "Image for bottom bar background"
+msgstr "Imagen de fondo de la barra inferior"
+
+#: includes/presets.php:596
+msgid "Bottom bar link color on hover"
+msgstr "Color de los enlaces de la barra inferior al pasar el cursor"
+
+#: includes/presets.php:589
+msgid "Bottom bar text color"
+msgstr "Color de texto de la barra inferior"
+
+#: includes/presets.php:582
+msgid "Bottom bar background color"
+msgstr "Color de fondo de la barra inferior"
+
+#: includes/presets.php:251 includes/presets.php:528
+msgid "Bottom bar"
+msgstr "Barra inferior"
+
+#: includes/presets.php:501
+msgid "Header text color on hover"
+msgstr "Color de texto de la cabecera al pasar el cursor"
+
+#: includes/presets.php:494
+msgid "Header text color"
+msgstr "Color de texto de la cabecera"
+
+#: includes/presets.php:487
+msgid "Header background color"
+msgstr "Color de fondo de la cabecera"
+
+#: includes/presets.php:250 includes/presets.php:433
+msgid "Main header"
+msgstr "Cabecera principal"
+
+#: includes/presets.php:415
+msgid "Image for top bar background"
+msgstr "Imagen de fondo de la barra superior"
+
+#: includes/presets.php:413 includes/presets.php:508 includes/presets.php:603
+msgid "Background image"
+msgstr "Imagen de fondo"
+
+#: includes/presets.php:406
+msgid "Top bar link color on hover"
+msgstr "Color de los enlaces de la barra superior al pasar el cursor"
+
+#: includes/presets.php:399
+msgid "Top bar text color"
+msgstr "Color de texto de la barra superior"
+
+#: includes/presets.php:392
+msgid "Top bar background color"
+msgstr "Color de fondo de la barra superior"
+
+#: includes/presets.php:360 includes/presets.php:455 includes/presets.php:550
+msgid "Set bottom padding"
+msgstr "Establece el relleno inferior"
+
+#: includes/presets.php:359 includes/presets.php:454 includes/presets.php:549
+msgid "Padding bottom (px)"
+msgstr "Relleno inferior (px)"
+
+#: includes/presets.php:349 includes/presets.php:444 includes/presets.php:539
+msgid "Set top padding"
+msgstr "Establece el relleno superior"
+
+#: includes/presets.php:348 includes/presets.php:443 includes/presets.php:538
+msgid "Padding top (px)"
+msgstr "Relleno superior (px)"
+
+#: includes/presets.php:249 includes/presets.php:338
+msgid "Top bar"
+msgstr "Barra superior"
+
+#: includes/presets.php:331
+msgid "Build your dream"
+msgstr "Construye tu sueño"
+
+#: includes/presets.php:326
+msgid "Header builder"
+msgstr "Maquetador de cabecera"
+
+#: includes/presets.php:318
+msgid "Add new"
+msgstr "Añadir nuevo"
+
+#: includes/presets.php:317
+msgid "Enter full URL"
+msgstr "Introduce la URL completa"
+
+#: includes/presets.php:316
+msgid "Select a site"
+msgstr "Selecciona un sitio"
+
+#: includes/presets.php:306
+msgid "Header Socials"
+msgstr "Redes sociales de la cabecera"
+
+#: includes/presets.php:295 includes/presets.php:510
+msgid "Image for header background"
+msgstr "Imagen de fondo de la cabecera"
+
+#: includes/presets.php:293
+msgid "Header Background image"
+msgstr "Imagen de fondo de la cabecera"
+
+#: includes/presets.php:286
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: includes/presets.php:279
+msgid "Third color"
+msgstr "Tercer color"
+
+#: includes/presets.php:272
+msgid "Secondary color"
+msgstr "Color secundario"
+
+#: includes/presets.php:265
+msgid "Main color"
+msgstr "Color principal"
+
+#: includes/presets.php:258
+msgid "Header Colors"
+msgstr "Colores de la cabecera"
+
+#: includes/presets.php:235
+msgid "Header maximum content width (100% if empty)"
+msgstr "Ancho máximo del contenido de la cabecera (100% si se deja en blanco)"
+
+#: includes/presets.php:234
+msgid "Header Content width (px)"
+msgstr "Ancho del contenido de la cabecera (px)"
+
+#: includes/presets.php:224
+msgid "Header maximum width (100% if empty)"
+msgstr "Ancho máximo de la cabecera (100% si se deja en blanco)"
+
+#: includes/presets.php:223
+msgid "Header Container width (px)"
+msgstr "Ancho del contenedor de la cabecera (px)"
+
+#: includes/presets.php:216 includes/presets.php:299 includes/presets.php:419
+#: includes/presets.php:514 includes/presets.php:609
+msgid "Replace image"
+msgstr "Reemplazar imagen"
+
+#: includes/presets.php:215 includes/presets.php:298 includes/presets.php:418
+#: includes/presets.php:513 includes/presets.php:608
+msgid "Remove image"
+msgstr "Eliminar imagen"
+
+#: includes/presets.php:214 includes/presets.php:297 includes/presets.php:417
+#: includes/presets.php:512 includes/presets.php:607
+msgid "Add image"
+msgstr "Añadir imagen"
+
+#: includes/presets.php:212
+msgid "Main theme Logo"
+msgstr "Logotipo del tema principal"
+
+#: includes/presets.php:210
+msgid "Logo"
+msgstr "Logotipo"
+
+#: includes/presets.php:205
+msgid "Header options"
+msgstr "Opciones de la cabecera"
+
+#: includes/presets.php:202
+msgid "Header"
+msgstr "Cabecera"
+
+#: includes/presets.php:184
+msgid "Whatsapp"
+msgstr "WhatsApp"
+
+#: includes/presets.php:183
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: includes/presets.php:182
+msgid "Youtube Play"
+msgstr "YouTube Play"
+
+#: includes/presets.php:181
+msgid "Youtube"
+msgstr "YouTube"
+
+#: includes/presets.php:180
+msgid "Skype"
+msgstr "Skype"
+
+#: includes/presets.php:179
+msgid "Google +"
+msgstr "Google+"
+
+#: includes/presets.php:178
+msgid "Google"
+msgstr "Google"
+
+#: includes/presets.php:177
+msgid "Soundcloud"
+msgstr "Soundcloud"
+
+#: includes/presets.php:176
+msgid "Reddit"
+msgstr "Reddit"
+
+#: includes/presets.php:175
+msgid "Odnoklassniki square"
+msgstr "Odnoklassniki cuadrado"
+
+#: includes/presets.php:174
+msgid "Odnoklassniki"
+msgstr "Odnoklassniki"
+
+#: includes/presets.php:173
+msgid "Dropbox"
+msgstr "Dropbox"
+
+#: includes/presets.php:172
+msgid "Delicious"
+msgstr "Delicious"
+
+#: includes/presets.php:171
+msgid "Yahoo"
+msgstr "Yahoo"
+
+#: includes/presets.php:170
+msgid "Medium"
+msgstr "Medio"
+
+#: includes/presets.php:169
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: includes/presets.php:168
+msgid "Linkedin"
+msgstr "LinkedIn"
+
+#: includes/presets.php:167
+msgid "Git"
+msgstr "Git"
+
+#: includes/presets.php:166
+msgid "Flickr"
+msgstr "Flickr"
+
+#: includes/presets.php:165
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: includes/presets.php:164
+msgid "Behance"
+msgstr "Behance"
+
+#: includes/presets.php:163
+msgid "Instagram"
+msgstr "Instagram"
+
+#: includes/presets.php:162
+msgid "VK"
+msgstr "VK"
+
+#: includes/presets.php:161
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/presets.php:160
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/presets.php:159
+msgid "Select Option..."
+msgstr "Selecciona una opción..."
+
+#: includes/presets.php:132
+msgid "Text with icon"
+msgstr "Texto con icono"
+
+#: includes/presets.php:117
+msgid "Image"
+msgstr "Imagen"
+
+#: includes/presets.php:112 includes/presets.php:313
+msgid "Socials"
+msgstr "Redes sociales"
+
+#: includes/presets.php:107
+msgid "Icon Box"
+msgstr "Caja con icono"
+
+#: includes/presets.php:101
+msgid "Sign in"
+msgstr "Acceder"
+
+#: includes/presets.php:95
+msgid "WPML"
+msgstr "WPML"
+
+#: includes/presets.php:94
+msgid "Custom"
+msgstr "Personalizado"
+
+#: includes/presets.php:91
+msgid "Dropdown"
+msgstr "Desplegable"
+
+#: includes/presets.php:86
+msgid "Search"
+msgstr "Buscar"
+
+#: includes/presets.php:80
+msgid "Cart"
+msgstr "Carrito"
+
+#: includes/presets.php:75
+msgid "Popup"
+msgstr "Mensaje emergente"
+
+#: includes/presets.php:70
+msgid "Button Extended"
+msgstr "Botón ampliado"
+
+#: includes/presets.php:65
+msgid "Offices"
+msgstr "Oficinas"
+
+#: includes/presets.php:60
+msgid "Button"
+msgstr "Botón"
+
+#: includes/js_translations.php:86
+msgid "Import header"
+msgstr "Importar cabecera"
+
+#: includes/js_translations.php:81
+msgid "Bold"
+msgstr "Negrita"
+
+#: includes/js_translations.php:80
+msgid "Regular"
+msgstr "Normal"
+
+#: includes/presets.php:1361 includes/js_translations.php:79
+msgid "Light"
+msgstr "Clara"
+
+#: includes/js_translations.php:78
+msgid "Font Weight"
+msgstr "Grosor de la fuente"
+
+#: includes/presets.php:122 includes/js_translations.php:77
+msgid "Text"
+msgstr "Texto"
+
+#: includes/js_translations.php:76
+msgid "Large"
+msgstr "Grande"
+
+#: includes/js_translations.php:75
+msgid "Small"
+msgstr "Pequeño"
+
+#: includes/js_translations.php:74
+msgid "Select size"
+msgstr "Seleccionar tamaño"
+
+#: includes/js_translations.php:73
+msgid "Icon hidden"
+msgstr "Icono oculto"
+
+#: includes/js_translations.php:72
+msgid "Icon only"
+msgstr "Solo el icono"
+
+#: includes/js_translations.php:71
+msgid "Square"
+msgstr "Cuadrado"
+
+#: includes/js_translations.php:70
+msgid "Round"
+msgstr "Redondeado"
+
+#: includes/js_translations.php:69
+msgid "Popup content pag"
+msgstr "Página de contenido del mensaje emergente"
+
+#: includes/js_translations.php:68
+msgid "Select Button Icon"
+msgstr "Selecciona el icono del botón"
+
+#: includes/js_translations.php:67
+msgid "Add Url"
+msgstr "Añadir URL"
+
+#: includes/js_translations.php:66
+msgid "Add Text"
+msgstr "Añadir texto"
+
+#: includes/js_translations.php:65
+msgid "Add icon"
+msgstr "Añadir icono"
+
+#: includes/js_translations.php:64
+msgid "Office name"
+msgstr "Nombre de la oficina"
+
+#: includes/js_translations.php:63
+msgid "Change office name"
+msgstr "Cambiar el nombre de la oficina"
+
+#: includes/js_translations.php:62
+msgid "Enter new office name"
+msgstr "Introduce el nombre de la nueva oficina"
+
+#: includes/js_translations.php:61
+msgid "Enter new office"
+msgstr "Introduce una nueva oficina"
+
+#: includes/js_translations.php:60
+msgid "Hover line color"
+msgstr "Color de la línea al pasar el cursor"
+
+#: includes/js_translations.php:59
+msgid "Enter Icon box description"
+msgstr "Introduce la descripción de la caja con icono"
+
+#: includes/js_translations.php:58
+msgid "Description"
+msgstr "Descripción"
+
+#: includes/js_translations.php:57
+msgid "Enter Icon box title"
+msgstr "Introduce el título de la caja con icono"
+
+#: includes/js_translations.php:56
+msgid "Menu iconbox"
+msgstr "Caja con icono de menú"
+
+#: includes/js_translations.php:55
+msgid "Fullwidth with iconbox"
+msgstr "Ancho completo con caja con icono"
+
+#: includes/js_translations.php:54
+msgid "Default"
+msgstr "Por defecto"
+
+#: includes/js_translations.php:53
+msgid "Style"
+msgstr "Estilo"
+
+#: includes/js_translations.php:52
+msgid "Inner menu levels text color"
+msgstr "Color del texto de los menús de nivel interior"
+
+#: includes/presets.php:127 includes/js_translations.php:51
+msgid "Menu"
+msgstr "Menú"
+
+#: includes/js_translations.php:50
+msgid "Enter image width"
+msgstr "Introduce el ancho de la imagen"
+
+#: includes/js_translations.php:49
+msgid "Image width"
+msgstr "Ancho de la imagen"
+
+#: includes/js_translations.php:48
+msgid "Enter Url"
+msgstr "Introduce una URL"
+
+#: includes/js_translations.php:47
+msgid "Url"
+msgstr "URL"
+
+#: includes/js_translations.php:46
+msgid "Remove Image"
+msgstr "Eliminar imagen"
+
+#: includes/js_translations.php:45
+msgid "Replace Image"
+msgstr "Reemplazar imagen"
+
+#: includes/js_translations.php:44
+msgid "Add Image"
+msgstr "Añadir imagen"
+
+#: includes/js_translations.php:43
+msgid "Use Logo"
+msgstr "Usar logotipo"
+
+#: includes/js_translations.php:42
+msgid "Title"
+msgstr "Título"
+
+#: includes/js_translations.php:41
+msgid "Select Icon"
+msgstr "Seleccionar icono"
+
+#: includes/js_translations.php:40
+msgid "Select style"
+msgstr "Seleccionar estilo"
+
+#: includes/js_translations.php:39
+msgid "Custom icon color"
+msgstr "Color personalizado del icono"
+
+#: includes/js_translations.php:38
+msgid "Modal width"
+msgstr "Ancho de la ventana emergente"
+
+#: includes/js_translations.php:37
+msgid "Line 2 url"
+msgstr "Línea 2 de URL"
+
+#: includes/js_translations.php:36
+msgid "Use as link?"
+msgstr "¿Usar como enlace?"
+
+#: includes/js_translations.php:35
+msgid "Icon box description"
+msgstr "Descripción de la caja con icono"
+
+#: includes/js_translations.php:34
+msgid "Icon box title"
+msgstr "Título de la caja con icono"
+
+#: includes/js_translations.php:33
+msgid "Line 2"
+msgstr "Línea 2"
+
+#: includes/js_translations.php:32
+msgid "Line 1"
+msgstr "Línea 1"
+
+#: includes/js_translations.php:31
+msgid "Custom text color"
+msgstr "Color personalizado del texto"
+
+#: includes/js_translations.php:30
+msgid "Dropdown URL"
+msgstr "URL del desplegable"
+
+#: includes/js_translations.php:29
+msgid "Dropdown label"
+msgstr "Etiqueta del desplegable"
+
+#: includes/js_translations.php:28
+msgid "Enter Dropdown URL"
+msgstr "Introduce la URL del desplegable"
+
+#: includes/js_translations.php:27
+msgid "Enter Dropdown label"
+msgstr "Introduce la etiqueta del desplegable"
+
+#: includes/js_translations.php:26
+msgid "Dropdown type"
+msgstr "Tipo de desplegable"
+
+#: includes/js_translations.php:25
+msgid "Cart style"
+msgstr "Estilo del carrito"
+
+#: includes/js_translations.php:24
+msgid "Button text color"
+msgstr "Color de texto del botón"
+
+#: includes/js_translations.php:23
+msgid "Enter description"
+msgstr "Introduce una descripción"
+
+#: includes/js_translations.php:22
+msgid "Button Description"
+msgstr "Descripción del botón"
+
+#: includes/js_translations.php:21
+msgid "Enter URL"
+msgstr "Introduce una URL"
+
+#: includes/js_translations.php:20
+msgid "Enter text"
+msgstr "Introduce un texto"
+
+#: includes/js_translations.php:19
+msgid "Save"
+msgstr "Guardar"
+
+#: includes/js_translations.php:18
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: includes/js_translations.php:17
+msgid "Mobile Margins"
+msgstr "Márgenes del móvil"
+
+#: includes/js_translations.php:16
+msgid "Tablet Margins"
+msgstr "Márgenes de la tableta"
+
+#: includes/js_translations.php:15
+msgid "Desktop Margins"
+msgstr "Márgenes del escritorio"
+
+#: includes/js_translations.php:14
+msgid "Button URL"
+msgstr "URL del botón"
+
+#: includes/js_translations.php:13
+msgid "Button text"
+msgstr "Texto del botón"
+
+#: includes/js_translations.php:12
+msgid "Right"
+msgstr "Derecha"
+
+#: includes/js_translations.php:11
+msgid "Left"
+msgstr "Izquierda"
+
+#: includes/js_translations.php:10
+msgid "Icon position"
+msgstr "Posición del icono"
+
+#: includes/js_translations.php:9
+msgid "Button Icon"
+msgstr "Icono del botón"
+
+#: includes/js_translations.php:8 includes/js_translations.php:82
+#: includes/js_translations.php:83 includes/js_translations.php:84
+#: includes/js_translations.php:85
+msgid "Solid"
+msgstr "Sólido"
+
+#: includes/js_translations.php:7
+msgid "Outline"
+msgstr "Contorno"
+
+#: includes/js_translations.php:6
+msgid "Button style"
+msgstr "Estilo del botón"
+
+#: includes/helpers.php:458
+msgid "Option with this name already exists"
+msgstr "Ya existe una opción con este nombre"
+
+#: includes/helpers.php:452
+msgid "Header imported, reloading page"
+msgstr "Cabecera importada, recargando la página"
+
+#: includes/helpers.php:436
+msgid "Header with this name already exists"
+msgstr "Ya existe una cabecera con este nombre"
+
+#: includes/helpers.php:322
+msgid "Default Header"
+msgstr "Cabecera por defecto"
+
+#: includes/helpers.php:275
+msgid "Error occured"
+msgstr "Ha ocurrido un error"
+
+#: includes/helpers.php:272
+msgid "Nothing to save"
+msgstr "Nada que guardar"
+
+#: includes/helpers.php:270
+msgid "Settings Saved"
+msgstr "Ajustes guardados"
+
+#: includes/presets.php:32 includes/presets.php:248 includes/helpers.php:176
+msgid "None"
+msgstr "Ninguno"
+
+#: includes/helpers.php:66
+msgid "Personal_blog"
+msgstr "Blog personal"
+
+#: includes/helpers.php:65
+msgid "Restaurant"
+msgstr "Restaurante"
+
+#: includes/helpers.php:64
+msgid "Viral"
+msgstr "Viral"
+
+#: includes/helpers.php:63
+msgid "Church"
+msgstr "Iglesia"
+
+#: includes/helpers.php:62
+msgid "Rental"
+msgstr "Alquiler"
+
+#: includes/helpers.php:61
+msgid "Charity"
+msgstr "Caridad"
+
+#: includes/helpers.php:60
+msgid "Music"
+msgstr "Música"
+
+#: includes/helpers.php:59
+msgid "Healthcoach"
+msgstr "Asesor de salud"
+
+#: includes/helpers.php:58
+msgid "Medical"
+msgstr "Médico"
+
+#: includes/helpers.php:57
+msgid "Transportation"
+msgstr "Transporte"
+
+#: includes/helpers.php:56
+msgid "Beauty"
+msgstr "Belleza"
+
+#: includes/helpers.php:55
+msgid "Construction"
+msgstr "Construcción"
+
+#: includes/helpers.php:51
+msgid "Delete \"%s\""
+msgstr "Borrar \"%s\""
+
+#: hb_templates/mobile/mobile.php:25
+msgid "Site Logo"
+msgstr "Logotipo del sitio"
+
+#: hb_templates/mobile/mobile.php:23
+msgid "Home"
+msgstr "Inicio"
+
+#: hb_templates/elements/socials/socials.php:37
+#: hb_templates/elements/socials/socials.php:51
+msgid "Social item"
+msgstr "Elemento social"
+
+#: hb_templates/elements/socials/socials.php:30
+msgid "Follow"
+msgstr "Seguir"
+
+#: hb_templates/elements/signin/signin.php:9
+msgid "Login / Register"
+msgstr "Acceder / Registrarse"
+
+#: hb_templates/elements/signin/signin.php:6
+msgid "My account"
+msgstr "Mi cuenta"
+
+#: hb_templates/elements/filter/filter.php:40
+msgid "Trending"
+msgstr "Tendencias"
+
+#: hb_templates/elements/filter/filter.php:34
+msgid "Latest"
+msgstr "Recientes"
+
+#: hb_templates/elements/filter/filter.php:28
+msgid "Popular"
+msgstr "Popular"
+
+#: hb_templates/elements/filter/filter.php:22
+msgid "Hot"
+msgstr "Destacado"
+
+#: hb_templates/elements/cart/quantity_with_text.php:4
+msgid "%d item in Cart"
+msgid_plural "%d items in Cart"
+msgstr[0] "%d artículo en el carrito"
+msgstr[1] "%d artículos en el carrito"
+
+#: hb_templates/elements/cart/mini-cart.php:53
+msgid "View cart"
+msgstr "Ver carrito"
+
+#: hb_templates/elements/cart/mini-cart.php:51
+msgid "Checkout"
+msgstr "Finalizar compra"
+
+#: hb_templates/elements/cart/mini-cart.php:47
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: hb_templates/elements/cart/mini-cart.php:43
+msgid "No products in the cart."
+msgstr "No hay productos en el carrito."
+
+#: frontend/includes.php:630
+msgid "English"
+msgstr "Inglés"

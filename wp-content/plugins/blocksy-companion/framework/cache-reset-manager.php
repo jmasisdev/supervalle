@@ -19,6 +19,7 @@ class CacheResetManager {
 		if ($options['type'] === 'theme') {
 			if (in_array('blocksy', $options['themes'])) {
 				$this->run_cache_purge();
+				do_action('blocksy:dynamic-css:regenere_css_files');
 			}
 		}
 
@@ -31,6 +32,7 @@ class CacheResetManager {
 
 			if (in_array(BLOCKSY_PLUGIN_BASE, $plugins)) {
 				$this->run_cache_purge();
+				do_action('blocksy:dynamic-css:regenere_css_files');
 			}
 		}
 	}
@@ -82,10 +84,16 @@ class CacheResetManager {
 
 		if (class_exists('WP_Optimize') && defined('WPO_PLUGIN_MAIN_PATH')) {
 			if (! class_exists('WP_Optimize_Cache_Commands')) include_once(WPO_PLUGIN_MAIN_PATH . 'cache/class-cache-commands.php');
+			if (! class_exists('WP_Optimize_Minify_Commands')) include_once(WPO_PLUGIN_MAIN_PATH . 'minify/class-wp-optimize-minify-commands.php');
 
 			if (class_exists('WP_Optimize_Cache_Commands')) {
 				$wpoptimize_cache_commands = new \WP_Optimize_Cache_Commands();
 				$wpoptimize_cache_commands->purge_page_cache();
+			}
+
+			if (class_exists('WP_Optimize_Minify_Commands')) {
+				$wpoptimize_minify_commands = new \WP_Optimize_Minify_Commands();
+				$wpoptimize_minify_commands->purge_minify_cache();
 			}
 		}
 

@@ -149,7 +149,7 @@ blocksy_output_box_shadow([
 		'spread' => 0,
 		'inset' => false,
 		'color' => [
-			'color' => 'rgba(44,62,80,0.15)',
+			'color' => 'rgba(44,62,80,0.05)',
 		],
 	])),
 	'responsive' => true,
@@ -275,7 +275,7 @@ if (isset($has_transparent_header) && $has_transparent_header) {
 			'spread' => 0,
 			'inset' => false,
 			'color' => [
-				'color' => 'rgba(44,62,80,0.15)',
+				'color' => 'rgba(44,62,80,0.05)',
 			],
 		])),
 		'responsive' => true,
@@ -403,7 +403,7 @@ if (isset($has_sticky_header) && $has_sticky_header) {
 			'spread' => 0,
 			'inset' => false,
 			'color' => [
-				'color' => 'rgba(44,62,80,0.15)',
+				'color' => 'rgba(44,62,80,0.05)',
 			],
 		])),
 		'responsive' => true,
