@@ -11,7 +11,7 @@ namespace Nextend\SmartSlider3\Application\Admin\Layout\Block\Core\NavBar;
     <?php $this->displayBreadCrumbs(); ?>
 
     <div class="n2_nav_bar__logo">
-        <a href="<?php echo $this->getSidebarLink(); ?>">
+        <a href="<?php echo $this->getSidebarLink(); ?>" tabindex="-1">
             <?php echo $this->getLogo(); ?>
         </a>
     </div>

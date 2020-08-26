@@ -160,80 +160,84 @@ echo $this->getSliderHTML();
         <?php
         }else{
         ?>
-        n2ss.ready(<?php echo $this->getSliderID(); ?>, function (slider) {
+        if (typeof n2ss !== "undefined") {
+            n2ss.ready(<?php echo $this->getSliderID(); ?>, function (slider) {
 
-            var $slider = slider.sliderElement.on({
-                    SliderResize: function (e, ratios, responsive) {
-                        notifyParentAboutChange(e, responsive);
-                    },
-                    Show: function (e) {
-                        notifyParentAboutChange(e, $slider.data('ss').responsive);
-                    }
-                }),
-                $margin = $slider.closest('.n2-ss-margin'),
-                margin = [$margin.css('marginTop'), $margin.css('marginRight'), $margin.css('marginBottom'), $margin.css('marginLeft')].join(' ');
-
-            $margin.css('margin', 0);
-
-            // If the slider is already ready, then SliderResize might not happen to adjust the iframe size in the parent
-            if (slider && slider.stages.resolved('ResizeFirst')) {
-                notifyParentAboutChange(null, slider.responsive);
-            }
-
-            var interval = setInterval(broadCastReady, 40);
-
-            var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-            window[eventMethod](eventMethod == "attachEvent" ? "onmessage" : "message", function (e) {
-                var data = e[e.message ? "message" : "data"];
-                switch (data["key"]) {
-                    case "ackReady":
-                        window.n2Width = data.windowInnerWidth;
-                        window.n2Height = data.windowInnerHeight;
-                        window.n2ClientHeight = data.windowInnerHeight;
-                        clearInterval(interval);
-                        notifyParentAboutChange = NextendDeBounce(function (e, responsive) {
-                            parent.postMessage({
-                                key: 'resize',
-                                width: $('body').width(),
-                                height: $('body').height(),
-                                forceFull: responsive.parameters.forceFull,
-                                fullPage: responsive.parameters.type === 'fullpage',
-                                focus: responsive.parameters.focus,
-                                margin: margin
-                            }, "*");
-                        }, 33);
-                        if (typeof tmpChange !== 'undefined') {
-                            notifyParentAboutChange.apply(this, tmpChange);
+                var $slider = slider.sliderElement.on({
+                        SliderResize: function (e, ratios, responsive) {
+                            notifyParentAboutChange(e, responsive);
+                        },
+                        Show: function (e) {
+                            notifyParentAboutChange(e, $slider.data('ss').responsive);
                         }
-                        break;
-                    case 'clientHeight':
-                        window.n2ClientHeight = data.clientHeight;
-                        $(window).trigger('resize');
-                        break;
-                    case 'windowSize':
-                        window.n2Width = data.windowInnerWidth;
-                        window.n2Height = data.windowInnerHeight;
-                        $(window).trigger('resize');
-                        break;
+                    }),
+                    $margin = $slider.closest('.n2-ss-margin'),
+                    margin = [$margin.css('marginTop'), $margin.css('marginRight'), $margin.css('marginBottom'), $margin.css('marginLeft')].join(' ');
+
+                $margin.css('margin', 0);
+
+                // If the slider is already ready, then SliderResize might not happen to adjust the iframe size in the parent
+                if (slider && slider.stages.resolved('ResizeFirst')) {
+                    notifyParentAboutChange(null, slider.responsive);
                 }
-            });
 
-            n2const.setLocation = function (l) {
-                parent.postMessage({
-                    key: 'setLocation',
-                    location: l
-                }, "*");
-            };
+                var interval = setInterval(broadCastReady, 40);
 
-            slider.stages.done('HasDimension', function () {
-
-                $('a').each(function () {
-                    if ($(this).attr('target') !== '_blank') {
-                        $(this).attr('target', '_parent');
+                var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+                window[eventMethod](eventMethod == "attachEvent" ? "onmessage" : "message", function (e) {
+                    var data = e[e.message ? "message" : "data"];
+                    switch (data["key"]) {
+                        case "ackReady":
+                            window.n2Width = data.windowInnerWidth;
+                            window.n2Height = data.windowInnerHeight;
+                            window.n2ClientHeight = data.windowInnerHeight;
+                            clearInterval(interval);
+                            notifyParentAboutChange = NextendDeBounce(function (e, responsive) {
+                                parent.postMessage({
+                                    key: 'resize',
+                                    width: $('body').width(),
+                                    height: $('body').height(),
+                                    forceFull: responsive.parameters.forceFull,
+                                    fullPage: responsive.parameters.type === 'fullpage',
+                                    focus: responsive.parameters.focus,
+                                    margin: margin
+                                }, "*");
+                            }, 33);
+                            if (typeof tmpChange !== 'undefined') {
+                                notifyParentAboutChange.apply(this, tmpChange);
+                            }
+                            break;
+                        case 'clientHeight':
+                            window.n2ClientHeight = data.clientHeight;
+                            $(window).trigger('resize');
+                            break;
+                        case 'windowSize':
+                            window.n2Width = data.windowInnerWidth;
+                            window.n2Height = data.windowInnerHeight;
+                            $(window).trigger('resize');
+                            break;
                     }
                 });
+
+                n2const.setLocation = function (l) {
+                    parent.postMessage({
+                        key: 'setLocation',
+                        location: l
+                    }, "*");
+                };
+
+                slider.stages.done('HasDimension', function () {
+
+                    $('a').each(function () {
+                        if ($(this).attr('target') !== '_blank') {
+                            $(this).attr('target', '_parent');
+                        }
+                    });
+                });
             });
-        });
+        } else {
+            console.error('This slider has no slides: <?php echo $this->getSliderID(); ?>');
+        }
         <?php
         }
         ?>

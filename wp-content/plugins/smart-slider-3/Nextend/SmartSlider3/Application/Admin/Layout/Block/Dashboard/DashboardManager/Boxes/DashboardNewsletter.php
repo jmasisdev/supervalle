@@ -25,7 +25,7 @@ use Nextend\Framework\Platform\Platform;
     <form class="n2_dashboard_newsletter__form">
         <input type="hidden" name="<?php echo strtoupper(Platform::getName()); ?>" value="Yes"/>
         <input type="hidden" name="SOURCE" value="Smart Slider 3"/>
-        <input type="email" name="EMAIL" value="<?php echo Platform::getUserEmail(); ?>" placeholder="Email"/>
+        <input type="email" name="EMAIL" value="<?php echo Platform::getUserEmail(); ?>" placeholder="Email" tabindex="-1"/>
     </form>
 
     <div class="n2_dashboard_manager_newsletter__button">
