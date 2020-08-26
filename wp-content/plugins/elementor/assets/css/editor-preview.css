@@ -1,4 +1,4 @@
-/*! elementor - v3.0.0 - 23-08-2020 */
+/*! elementor - v3.0.1 - 25-08-2020 */
 @charset "UTF-8";
 .elementor-control-unit-1 {
   width: 27px; }
@@ -3016,4 +3016,8 @@ html.elementor-html {
   [data-elementor-device-mode="mobile"] .elementor-edit-area-active .elementor-hidden-phone > .elementor-widget-wrap {
     -webkit-filter: opacity(0.4) saturate(0);
             filter: opacity(0.4) saturate(0); }
+  [data-elementor-device-mode="desktop"] .elementor-edit-area-active .elementor-hidden-desktop.elementor-edit-hidden,
+  [data-elementor-device-mode="tablet"] .elementor-edit-area-active .elementor-hidden-tablet.elementor-edit-hidden,
+  [data-elementor-device-mode="mobile"] .elementor-edit-area-active .elementor-hidden-phone.elementor-edit-hidden {
+    display: none; }
 /*# sourceMappingURL=editor-preview.css.map */

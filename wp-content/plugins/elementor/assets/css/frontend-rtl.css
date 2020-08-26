@@ -1,4 +1,4 @@
-/*! elementor - v3.0.0 - 23-08-2020 */
+/*! elementor - v3.0.1 - 25-08-2020 */
 .dialog-widget-content {
   background-color: #fff;
   position: absolute;
@@ -1206,7 +1206,7 @@ ul.elementor-icon-list-items.elementor-inline-items {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .elementor-form-fields-wrapper.elementor-labels-above > .elementor-field-group > input, .elementor-form-fields-wrapper.elementor-labels-above > .elementor-field-group > textarea, .elementor-form-fields-wrapper.elementor-labels-above > .elementor-field-group > .elementor-select-wrapper, .elementor-form-fields-wrapper.elementor-labels-above > .elementor-field-group .elementor-field-subgroup {
+  .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group > input, .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group > textarea, .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group > .elementor-select-wrapper, .elementor-form-fields-wrapper.elementor-labels-above .elementor-field-group .elementor-field-subgroup {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     max-width: 100%; }

@@ -1,4 +1,4 @@
-/*! elementor - v3.0.0 - 23-08-2020 */
+/*! elementor - v3.0.1 - 25-08-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -22875,17 +22875,15 @@ PanelMenu.initGroups = function () {
       name: 'view-page',
       icon: 'eicon-preview-thin',
       title: elementor.translate('view_page'),
-      callback: function callback() {
-        return location.href = elementor.config.document.urls.permalink;
-      }
+      type: 'link',
+      link: elementor.config.document.urls.permalink
     }, // Todo: internal command.
     {
       name: 'exit-to-dashboard',
       icon: 'eicon-wordpress-light',
       title: elementor.translate('exit_to_dashboard'),
-      callback: function callback() {
-        return location.href = elementor.config.document.urls.exit_to_dashboard;
-      }
+      type: 'link',
+      link: elementor.config.document.urls.exit_to_dashboard
     }]
   });
 
