@@ -2,8 +2,6 @@
 
 $attachment_id = false;
 
-
-
 $page_title_bg_type = blocksy_akg_or_customizer(
 	'page_title_bg_type',
 	blocksy_get_page_title_source(),
@@ -39,7 +37,6 @@ if ($page_title_bg_type !== 'color') {
 		}
 	}
 }
-
 
 if ($page_title_bg_type === 'custom_image') {
 	$attachment_id = null;
@@ -106,13 +103,13 @@ if ($hero_structure === 'narrow') {
 ?>
 
 <section <?php echo blocksy_attr_to_html($attr) ?>>
-	<?php if ( $attachment_id ) { ?>
+	<?php if ($attachment_id) { ?>
 		<figure>
 			<?php
 				echo blocksy_image([
 					'attachment_id' => $attachment_id,
-					'ratio' => '16/9',
 					'size' => 'full',
+					'ratio_blocks' => false
 				]);
 			?>
 		</figure>

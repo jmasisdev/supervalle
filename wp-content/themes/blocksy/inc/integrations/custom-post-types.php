@@ -44,6 +44,8 @@ class Blocksy_Custom_Post_Types {
 				'reply',
 				'course',
 				'lesson',
+				'tribe_events',
+				'testimonial'
 			]));
 
 			$this->supported_post_types = array_unique(apply_filters(

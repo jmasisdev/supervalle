@@ -1,13 +1,7 @@
 .site-branding {
 	display: flex;
-
-	&:not([data-logo="top"]) {
-		align-items: center;
-	}
-}
-
-.site-title-container {
-	text-align: var(--text-align);
+	align-items: var(--align-items, center);
+	text-align: var(--text-align, center);
 }
 
 .site-title {
@@ -28,42 +22,28 @@
 // logo
 .site-logo-container {
 	display: flex;
-	position: relative;
-}
 
-.sticky-logo,
-.default-logo {
-	width: auto; 
-	height: var(--maxHeight, 50px);
-	object-fit: contain;
-	transition: opacity 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955),
-				height 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	img {
+		width: auto; 
+		height: var(--maxHeight, 50px);
+		object-fit: contain;
+	}
 }
-
 
 // sticky logo
-.sticky-logo {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	opacity: 0;
-	margin: auto;
-}
-
 [data-sticky*="yes"] {
-	
 	.sticky-logo {
-		opacity: 1;
+		display: block;
 
 		+ .default-logo {
-			opacity: 0;
+			display: none;
 		}
 	}
 }
 
-
+.sticky-logo {
+	display: none;
+}
 
 // logo position
 [data-logo="top"] {
@@ -76,7 +56,6 @@
 
 [data-logo="left"] {
 	.site-title-container {
-		--text-align: left;
 		margin-left: 1em;
 	}
 }
@@ -85,21 +64,47 @@
 	flex-direction: row-reverse;
 
 	.site-title-container {
-		--text-align: right;
 		margin-right: 1em;
 	}
 }
 
-// alignment
-[data-column="middle"] .site-branding {
-	align-items: center;
-	--text-align: center;
+// logo alignment inside columns
+[data-column="middle"] {
+	[data-logo="left"] {
+		--text-align: left;
+	}
+
+	[data-logo="right"] {
+		--text-align: right;
+	}
+}
+
+[data-column="start"] [data-items="primary"],
+[data-column="end"] [data-items="secondary"] {
+	.site-branding {
+		--text-align: left;
+	}
+
+	[data-logo="right"] {
+		--text-align: right;
+	}
+
+	[data-logo="top"] {
+		--align-items: flex-start;	
+	}
 }
 
 [data-column="start"] [data-items="secondary"],
 [data-column="end"] [data-items="primary"] {
 	.site-branding {
-		align-items: flex-end;
 		--text-align: right;
+	}
+
+	[data-logo="left"] {
+		--text-align: left;
+	}
+
+	[data-logo="top"] {
+		--align-items: flex-end;	
 	}
 }

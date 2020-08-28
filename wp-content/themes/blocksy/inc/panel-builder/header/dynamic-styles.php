@@ -1,6 +1,6 @@
 <?php
 
-if ($has_sticky_header) {
+if (isset($has_sticky_header) && $has_sticky_header) {
 	$render = new Blocksy_Header_Builder_Render();
 	$header_height = $render->get_header_height($has_sticky_header);
 

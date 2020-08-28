@@ -1,3 +1,8 @@
+1.7.29: 2020-08-26
+- Improvement: WP Rocket CDN support for dynamic JS
+- Improvement: Logo alignment
+- Improvement: Dynamic CSS output for mobile devices
+
 1.7.28: 2020-08-24
 - Fix: Syntax error
 

@@ -97,11 +97,10 @@
 	// small height
 	&[data-type="small"] {
 		.thumbnail {
-			min-height: 32px;
 			justify-content: center;
 			
 			img {
-				height: 100%;
+				min-height: 32px;
 				max-height: 100px;
 			}
 		}

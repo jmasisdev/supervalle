@@ -237,7 +237,10 @@ const GenericOptionType = ({
 						__changed: [
 							...(responsiveValue.__changed || []),
 							...(device !== 'desktop' ? [device] : [])
-						]
+						].filter(
+							(value, index, self) =>
+								self.indexOf(value) === index
+						)
 				  }
 				: scalarValue
 		)

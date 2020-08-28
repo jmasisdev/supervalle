@@ -276,8 +276,24 @@
 	}
 
 	// attachment
-	.ct-attachment .thumbnail {
-		border-color: $border; 
+	.ct-attachment {
+		
+		.thumbnail {
+			border-color: $border; 
+		}
+
+		.upload-button {
+			box-shadow: none;
+
+			&:not(:hover) {
+				border-color: $border;
+				background: $background_light;
+			}
+		}
+
+		.actions {
+			background: lighten($background_light, 1%);
+		}
 	}
 
 	// tooltip

@@ -78,8 +78,6 @@ function blocksy_output_css_vars($args = []) {
 	if (
 		$args['responsive']
 		&&
-		$value['tablet'] !== $value['desktop']
-		&&
 		$value['tablet'] !== $value['mobile']
 	) {
 		$args['mobile_css']->put(

@@ -168,28 +168,37 @@ $options = [
 
 			blocksy_rand_md5() => [
 				'type' => 'ct-condition',
-				'condition' => [
-					'any' => [
-						'has_site_title' => 'yes',
-						'has_tagline' => 'yes',
-					]
-				],
+				'condition' => [ 'custom_logo:visibility' => 'yes' ],
 				'options' => [
 
 					blocksy_rand_md5() => [
-						'type' => 'ct-divider',
-					],
+						'type' => 'ct-condition',
+						'condition' => [
+							'any' => [
+								'has_site_title' => 'yes',
+								'has_tagline' => 'yes',
 
-					'logo_position' => [
-						'label' => __( 'Logo Image Position', 'blocksy' ),
-						'type' => 'ct-radio',
-						'value' => 'left',
-						'view' => 'text',
-						'design' => 'block',
-						'choices' => [
-							'left' => __( 'Left', 'blocksy' ),
-							'right' => __( 'Right', 'blocksy' ),
-							'top' => __( 'Top', 'blocksy' ),
+							]
+						],
+						'options' => [
+
+							blocksy_rand_md5() => [
+								'type' => 'ct-divider',
+							],
+
+							'logo_position' => [
+								'label' => __( 'Logo Image Position', 'blocksy' ),
+								'type' => 'ct-radio',
+								'value' => 'left',
+								'view' => 'text',
+								'design' => 'block',
+								'choices' => [
+									'left' => __( 'Left', 'blocksy' ),
+									'right' => __( 'Right', 'blocksy' ),
+									'top' => __( 'Top', 'blocksy' ),
+								],
+							],
+
 						],
 					],
 

@@ -1,6 +1,6 @@
 {
 	"name": "small-ct",
-	"version": "1.7.28",
+	"version": "1.7.29",
 	"title": "Blocksy",
 	"devDependencies": {
 		"babel-plugin-lodash": "^3.3.4",

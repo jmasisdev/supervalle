@@ -262,6 +262,10 @@ add_action('wp_enqueue_scripts', function () {
 		);
 	}
 
+	if (function_exists('get_rocket_cdn_url')) {
+		$data['public_url'] = get_rocket_cdn_url($data['public_url']);
+	}
+
 	if (apply_filters('blocksy:general:internet-explorer-redirect', true)) {
 		ob_start();
 		get_template_part('template-parts/internet', 'explorer');
